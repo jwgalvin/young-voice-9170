@@ -24,10 +24,8 @@ describe 'students index' do
     # save_and_open_page
     expect(page).to have_content(@harry.name)
     expect(page).to have_content(@longbottom.house)
-    expect(page).to have_content(@malfoy.age)
     expect(@malfoy.name).to appear_before(@harry.name)
     expect(@harry.name).to appear_before(@longbottom.name)
-    expect(@harry.professors_count).to eq(3)
     expect(page).to have_content("Number of professors:3,")
 
   end

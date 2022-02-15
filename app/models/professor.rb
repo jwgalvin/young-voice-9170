@@ -14,4 +14,8 @@ class Professor < ApplicationRecord
   def self.students
     Students.find(params[:id])
   end
+
+  def self.average_age
+    self.students.average(:age)
+  end
 end

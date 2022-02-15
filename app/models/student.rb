@@ -13,4 +13,5 @@ class Student <ApplicationRecord
   def self.professors_count
     Professors.count
   end
+
 end

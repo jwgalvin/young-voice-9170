@@ -26,6 +26,6 @@ describe "User story 2" do
   it "tests for US4, that the average age of the students is there" do
     visit "/professors/#{@snape.id}"
     save_and_open_page
-    expect(page).to have_content("The average age of Snape's students is: 11")
+    expect(page).to have_content("The average age of their students is: 11")
   end
 end
