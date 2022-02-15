@@ -4,4 +4,9 @@ class ProfessorsController < ApplicationController
     @prof_list = Professor.order_abc
   end
 
+  def show
+    # binding.pry
+    @prof_student_list = Professor.find(params[:id]).students
+  end
+
 end

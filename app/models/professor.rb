@@ -8,6 +8,10 @@ class Professor < ApplicationRecord
  validates :specialty, presence: :true
 
   def self.order_abc
-    order(name: :asc)
+    order(name: :ASC)
+  end
+
+  def self.students
+    Students.find(params[:id])
   end
 end
