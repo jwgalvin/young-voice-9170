@@ -42,7 +42,7 @@ describe "User story 2" do
   end
   it "lists the professors students on the professors show page" do
     visit "/professors/#{@snape.id}"
-    save_and_open_page
+    # save_and_open_page
     expect(page).to have_content(@harry.name)
     expect(page).to have_content(@longbottom.name)
   end
